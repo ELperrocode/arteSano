@@ -10,7 +10,7 @@ interface ParticipantCardProps {
 
 const ParticipantCard: React.FC<ParticipantCardProps> = ({ name, role, description, imageUrl }) => {
   return (
-    <div className={cn("flex flex-col items-center p-4 border rounded-md shadow-md hover:shadow-lg transition-shadow duration-300")}>
+    <div className={cn("flex flex-col items-center p-6 pt-9 border rounded-md shadow-md hover:shadow-lg transition-shadow duration-300")}>
       <div className="relative group">
         <img
           src={imageUrl}

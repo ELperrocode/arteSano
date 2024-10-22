@@ -16,8 +16,8 @@ const FeaturedProducts = () => {
   const { addItem } = useCart();
 
   return (
-    <div className="py-4 mx-auto sm:py-16 sm:px-8 lg:px-24">
-      <h3 className="px-4 text-2xl sm:text-3xl sm:pb-8">Nuestros productos:</h3>
+    <div className="py-4 mx-auto sm:py-16 sm:px-8 lg:px-24 pt-4">
+      <h3 className="px-4 text-2xl font-bold sm:text-3xl sm:pb-8">Productos Destacados:</h3>
       <Carousel>
         <CarouselContent className="-ml-2 md:-ml-4">
           {loading && <SkeletonSchema grid={3} />}

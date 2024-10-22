@@ -13,8 +13,8 @@ export const dataCarouselTop = [
   },
   {
     id: 2,
-    title: "Shadow Wizard Coding Gang",
-    description: "Encargados del desarrollo",
+    title: "Conócenos",
+    description: "Todas las tiendas en un solo lugar",
     link: "#",
   },
   {
@@ -28,7 +28,7 @@ export const dataCarouselTop = [
 const CarouselTextBanner = () => {
   const router = useRouter();
   return (
-    <div className="bg-gray-200 dark:bg-primary">
+    <div className="bg-blue-200 mt-4 dark:bg-primary">
       <Carousel
         className="w-full max-w-4xl mx-auto"
         plugins={[Autoplay({ delay: 5000 })]}

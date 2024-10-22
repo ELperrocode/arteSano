@@ -29,22 +29,22 @@ const MenuList = () => {
 
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList > 
         <NavigationMenuItem>
           <NavigationMenuTrigger>Inicio</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
+            <ul className="  grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
               <li>
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex select-none flex-col rounded-md bg-gradient-to-b from-muted/50 p-2 focus:shadow-md"
+                    className="flex select-none flex-col rounded-md from-muted/50 p-2 focus:shadow-md"
                     href="/"
                   >
                     <div className="mb-4 mt-4 text-lg font-medium">
                       Arte
                       <span className="text-blue-500 font-bold">Sano</span>
                     </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
+                    <p className="text-sm leading-tight text-muted-foreground ">
                       Shadow Wizard Coding Gang te invita a descubrir un mundo
                       de posibilidades. ✨ En nuestra tienda en línea,
                       encontrarás productos artesanales, turísticos y agrícolas
@@ -61,7 +61,7 @@ const MenuList = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Comercio</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+          <ul className="flex w-[400px] gap-3 p-4 md:w-[500px] lg:w-[600px] flex-row">
               {result.map((category: CategoryType) => (
                 <ListItem
                   key={category.id}
@@ -74,15 +74,17 @@ const MenuList = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/nosotros" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Nosotros
+            <NavigationMenuLink asChild>
+              <a className="flex bg-white select-none flex-col rounded-md bg-gradient-to-b from-muted/50 p-2 focus:shadow-md">
+                Nosotros
+              </a>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
-};
+}
 
 export default MenuList;
 
