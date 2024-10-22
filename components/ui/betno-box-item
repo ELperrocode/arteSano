@@ -1,0 +1,24 @@
+<BentoBox className="grid gap-5 grid-cols-3">
+  {!loading && result !== undefined && (
+    result.map((category: CategoryType) => (
+      <BentoBoxItem key={category.id} className="relative max-w-xs mx-auto overflow-hidden bg-no-repeat bg-cover rounded-lg">
+        <Link href={`/category/${category.slug}`}>
+          {category.imgCategoria && category.imgCategoria.url ? (
+            <img
+              src={category.imgCategoria.url}
+              alt={category.nombreCategoria}
+              className="max-w-[270px] transition duration-300 ease-in-out rounded-lg hover:scale-110"
+            />
+          ) : (
+            <div className="max-w-[270px] h-[270px] bg-gray-200 flex items-center justify-center rounded-lg">
+              <span className="text-gray-500">Imagen no disponible</span>
+            </div>
+          )}
+          <p className="w-full py-2 text-lg font-bold text-center bottom-4 text-slate-500 backdrop-blur-sm">
+            {category.nombreCategoria}
+          </p>
+        </Link>
+      </BentoBoxItem>
+    ))
+  )}
+</BentoBox>
