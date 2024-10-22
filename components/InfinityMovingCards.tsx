@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import useGetVendors, { VendorType } from "@/api/getVendors";
-import { cn } from "@/lib/utils";
+
 
 const InfiniteMovingCards: FC = () => {
   const { vendors, loading, error } = useGetVendors();

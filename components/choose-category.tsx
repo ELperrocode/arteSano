@@ -4,7 +4,6 @@ import { useGetCategories } from "@/api/getCategories";
 import { CategoryType } from "@/types/category";
 import { ResponseType } from "@/types/response";
 import Link from "next/link";
-import { useRef } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
@@ -47,7 +46,7 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div

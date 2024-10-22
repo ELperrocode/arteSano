@@ -10,7 +10,7 @@ type ProductCardProps = {
 
 const ProductCard = (props: ProductCardProps) => {
   const { producto } = props;
-  const router = useRouter();
+  
   const { addItem } = useCart();
 
   const handleAddToCart = () => {
