@@ -12,16 +12,16 @@ const Footer = () => {
         </div>
       </div>
       <p className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-        &copy; 2024  - Developed by <br>Luis</br>
+        &copy; 2024  - Developed by <br/>
         <Link href="https://github.com/ELperrocode" className="hover:underline m-0">
         ELperrocode
-        </Link> <br></br>
+        </Link> <br/>
         <Link href="https://github.com/quexopacode" className="hover:underline m-0">
         quexopacode
-        </Link> <br></br>
+        </Link> <br/>
         <Link href="https://github.com/IamBlack0" className="hover:underline m-0">
         IamBlack0
-        </Link><br></br>
+        </Link><br/>
       </p>
     </footer>
   );
