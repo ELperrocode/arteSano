@@ -6,7 +6,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 export function Hero() {
   const words = ["Sano", "Limpio", "Vivo", "Libre", "Ecommerce"];
-  const colors = ["text-blue-500", "text-green-500", "text-red-500", "text-yellow-500", "text-purple-500"];
+  const colors = ["text-blue-500", "text-green-500", "text-red-600", "text-yellow-500", "text-purple-500"];
   
   return (
     <div className="relative h-screen flex flex-col">
